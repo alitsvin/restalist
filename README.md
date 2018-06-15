@@ -1,4 +1,6 @@
-npm i
+Hi there! It's a list of restaurants so I called it Restalist.
+
+To get started you chould firstly install packages via 'npm i' and then follow instructions.
 
 To run server:
 cd api/
