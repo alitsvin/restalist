@@ -6,6 +6,9 @@ To run server:
 cd api/
 meteor -p *your*.*local*.*IP*.*address*:3000
 
+To bundle client:
+npm run meteor-client:bundle
+
 To run front-end in browser:
 ionic serve
 
@@ -22,6 +25,4 @@ cordova platform add android
 
 4. Change address in 'meteor-client.config.json' to your local ip address
 
-5. npm run meteor-client:bundle
-
-6. cordova run android
+5. cordova run android

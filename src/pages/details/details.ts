@@ -44,6 +44,7 @@ export class DetailsPage {
   public switchToPrevious () {
     for (let i=0; i<this.restaurants.length; i++) {
       if (this.selectedRestaurant._id === this.restaurants[i]._id) {
+        debugger;
         this.selectedRestaurant = this.restaurants[i+1] || this.restaurants[i];
         this.resetData();
         break;
