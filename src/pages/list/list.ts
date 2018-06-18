@@ -20,13 +20,13 @@ export class ListPage implements OnInit {
     this.restaurants = Restaurants.find({})
   }
 
-  showRestaurantDetails (restaurant): void {
+  public showRestaurantDetails (restaurant): void {
     let restaurants = this.restaurants.fetch();
 
     this.navCtrl.push(DetailsPage, {restaurant, restaurants});
   }
 
-  onSearch(foo): void {
+  public searchRestaurants(): void {
     let regex = new RegExp(this.searchKey);
     this.restaurants = Restaurants.find({
       title: { $regex: regex, $options: 'i'}});

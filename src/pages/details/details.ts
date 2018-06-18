@@ -67,7 +67,6 @@ export class DetailsPage {
     this.picture = this.selectedRestaurant.picture;
     this.description = this.selectedRestaurant.description;
     this.isEditing = false;
-    // this.cdr.detectChanges();
   }
 
   private isChanged (): boolean {

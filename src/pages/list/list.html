@@ -10,7 +10,8 @@
     <ion-item>
       <ion-input placeholder="Search"
                  [(ngModel)]="searchKey"
-                 (keyup)="onSearch($event)"></ion-input>
+                 clearInput="true"
+                 (ngModelChange)="searchRestaurants()"></ion-input>
     </ion-item>
     <ion-list class="restaurants">
       <ion-item-sliding *ngFor="let restaurant of restaurants | async">
